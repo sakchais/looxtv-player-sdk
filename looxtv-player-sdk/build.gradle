@@ -16,7 +16,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -44,7 +44,7 @@ dependencies {
     implementation libs.appcompat
     implementation libs.material
     implementation libs.leanback
-    implementation libs.media3.exoplayer
+
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
@@ -55,7 +55,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.sakchais'
             artifactId = 'looxtv-player-sdk'
-            version = "1.4"
+            version = "1.5"
             pom {
                 description = 'LooxTV Player SDK'
             }
