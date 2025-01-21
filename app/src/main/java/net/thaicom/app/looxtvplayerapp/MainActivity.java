@@ -8,9 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.media3.ui.PlayerView;
 
 import net.thaicom.sdk.looxtv.LooxPlayer;
-import net.thaicom.sdk.looxtv.LooxPlayerView;
+//import net.thaicom.sdk.looxtv.LooxPlayerView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
         // Initialize PlayerView
-        LooxPlayerView playerView = (LooxPlayerView) findViewById(R.id.player_view);
+        PlayerView playerView = (PlayerView) findViewById(R.id.player_view);
         player = new LooxPlayer(this);
         player.initialize(playerView);
         playbackListener=new LooxPlayer.PlaybackListener() {

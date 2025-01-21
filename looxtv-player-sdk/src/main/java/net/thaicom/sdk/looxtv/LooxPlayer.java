@@ -67,7 +67,7 @@ public class LooxPlayer {
     private int mNumConcurrent=0;
 
 //    private PlayerView mPlayerView=null;
-    private LooxPlayerView mPlayerView=null;
+    private PlayerView mPlayerView=null;
 
     Player.Listener mEventListener=null;
 
@@ -138,7 +138,7 @@ public class LooxPlayer {
         if (player != null) player.setPlaybackSpeed(speed);
     }
 
-    public void initialize(LooxPlayerView playerView) {
+    public void initialize(PlayerView playerView) {
         // Attach ExoPlayer to the PlayerView
 
         if (player != null && playerView != null) {
