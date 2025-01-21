@@ -1,1 +1,0 @@
-# looxtv-player-sdk
