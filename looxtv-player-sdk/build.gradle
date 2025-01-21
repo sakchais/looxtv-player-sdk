@@ -55,7 +55,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.sakchais'
             artifactId = 'looxtv-player-sdk'
-            version = "1.5"
+            version = "1.6"
             pom {
                 description = 'LooxTV Player SDK'
             }
