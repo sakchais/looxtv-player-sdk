@@ -30,6 +30,7 @@ dependencies {
 
     implementation libs.media3.common
     implementation libs.media3.exoplayer
+    implementation libs.media3.exoplayer.hls
     implementation libs.media3.ui
     implementation libs.media3.session
 
@@ -54,7 +55,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.sakchais'
             artifactId = 'looxtv-player-sdk'
-            version = "1.0"
+            version = "1.2"
             pom {
                 description = 'LooxTV Player SDK'
             }

@@ -9,6 +9,7 @@ material = "1.12.0"
 activity = "1.10.0"
 constraintlayout = "2.2.0"
 leanback = "1.0.0"
+media3ExoplayerHls = "1.5.1"
 okhttp = "4.11.0"
 retrofit = "2.9.0"
 zxingAndroidEmbedded = "4.3.0"
@@ -26,6 +27,7 @@ activity = { group = "androidx.activity", name = "activity", version.ref = "acti
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 leanback = { group = "androidx.leanback", name = "leanback", version.ref = "leanback" }
 media3-common = { module = "androidx.media3:media3-common", version.ref = "media3Exoplayer" }
+media3-exoplayer-hls = { module = "androidx.media3:media3-exoplayer-hls", version.ref = "media3ExoplayerHls" }
 media3-session = { module = "androidx.media3:media3-session", version.ref = "media3Exoplayer" }
 media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3Exoplayer" }
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }

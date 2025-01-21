@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSubscriptionReady(String tag) {
                 Log.d(TAG, "onSubscriptionReady: tag="+tag);
-                player.playLive(3);
+                player.playLive(202);
             }
         };
         player.setPlaybackListener(playbackListener);
