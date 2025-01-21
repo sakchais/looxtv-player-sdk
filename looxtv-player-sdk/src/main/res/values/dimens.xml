@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="qr_contact_image_height">16dp</dimen>
+    <dimen name="qr_contact_image_width">16dp</dimen>
+    <dimen name="user_info_button_text_size">18sp</dimen>
+
+    <dimen name="register_text_size2">16sp</dimen>
+    <dimen name="register_text_size">23sp</dimen>
+
+    <dimen name="user_info_text2_size">17sp</dimen>
+
+
+
+
+</resources>

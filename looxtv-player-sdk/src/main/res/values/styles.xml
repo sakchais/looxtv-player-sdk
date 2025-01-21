@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="account_info_text_style">
+        <item name="android:fontFamily">@font/sarabunregular</item>
+        <item name="android:textSize">@dimen/user_info_text2_size</item>
+        <item name="android:textColor">#f5f5f5</item>
+    </style>
+
+
+    <style name="register_text_style">
+        <item name="android:fontFamily">@font/sarabunregular</item>
+        <item name="android:textSize">@dimen/register_text_size</item>
+        <item name="android:textColor">#f5f5f5</item>
+    </style>
+
+    <style name="register_text_style2">
+        <item name="android:textSize">@dimen/register_text_size2</item>
+        <item name="android:fontFamily">@font/sarabunregular</item>
+    </style>
+
+</resources>

@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
+    id 'maven-publish'
 }
 
 android {
@@ -20,16 +21,46 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
 dependencies {
 
+    implementation libs.media3.common
+    implementation libs.media3.exoplayer
+    implementation libs.media3.ui
+    implementation libs.media3.session
+
+    implementation libs.okhttp
+    implementation libs.okhttp3.logging.interceptor
+    implementation libs.retrofit // Use the latest version
+    implementation libs.converter.gson // Gson converter
+    implementation libs.zxing.android.embedded
+    implementation libs.logging.interceptor
+
     implementation libs.appcompat
     implementation libs.material
+    implementation libs.leanback
+    implementation libs.media3.exoplayer
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.sakchais'
+            artifactId = 'looxtv-player-sdk'
+            version = "1.0"
+            pom {
+                description = 'LooxTV Player SDK'
+            }
+        }
+    }
+    repositories {               // << --- ADD This
+        mavenLocal()
+    }
 }

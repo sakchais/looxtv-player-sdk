@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="white">#FFFFFF</color>
+    <color name="whiteTransparent">#88ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="light_white">#ffffffff</color>
+</resources>

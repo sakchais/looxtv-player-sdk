@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:paddingVertical="0dp"
+    android:paddingHorizontal="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:background="#D3000000">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
+            <TableRow
+                android:gravity="right"
+                android:id="@+id/row_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAppearance="@style/register_text_style"
+                    android:text="@string/register_text"
+                    android:paddingLeft="50dp"
+                    android:paddingVertical="2dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/row_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="0.5dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="1dp"
+                    android:background="@color/lb_grey" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0.5dp">
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="0.5dp">
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible"
+                    android:gravity="top|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/light_white"
+                        android:textAppearance="@style/register_text_style2"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="20dp"
+                        android:text=""
+                        android:id="@+id/member_info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:visibility="visible"
+        android:gravity="bottom|left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/light_white"
+            android:textAppearance="@style/register_text_style2"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/register_device_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="bottom|right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/register_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/button_back_text"
+            android:fontFamily="@font/sarabunregular"
+            android:textSize="@dimen/user_info_button_text_size"
+            android:background="@drawable/buttonshapelime"
+            android:textColor="@drawable/selector_button_all" />
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/big_icon"
+        android:layout_weight="1"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/register_qr_image"
+                android:background="#ffffff"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="5dp" />
+            <TextView
+                android:textColor="#f5f5f5"
+                android:textAppearance="@style/register_text_style2"
+                android:id="@+id/register_qr_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textAppearance="@style/register_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_text2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
